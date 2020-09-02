@@ -28,10 +28,18 @@ function writePassword() {
   );
   //check that it is within constraints
   if (desiredPwLength > 8 && desiredPwLength < 128) {
-    console.log("Password length: " + desiredPwLength); //Test pass
+    console.log("Password length: " + desiredPwLength);
   } else {
     alert("Enter a number between 8 and 128 please.");
   }
+
+  //next, ask if lowercase allowed.
+  var lowercaseAllowed = confirm("Use lowercase letters in your new password?");
+  console.log("Use lowercase: " + lowercaseAllowed);
+
+  //next, ask if uppercase allowed.
+  var uppercaseAllowed = confirm("Use upper case letters in your new password?");
+  console.log("Use uppercase: " + uppercaseAllowed);
 
   var password = generatePassword();
   var passwordTextArea = document.querySelector("#password");
