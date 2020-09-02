@@ -41,6 +41,14 @@ function writePassword() {
   var uppercaseAllowed = confirm("Use upper case letters in your new password?");
   console.log("Use uppercase: " + uppercaseAllowed);
 
+  //next, ask if numbers allowed.
+  var numbersAllowed = confirm("Use numbers in your new password?");
+  console.log("Use numbers: " + numbersAllowed);
+
+  //next, ask if special characters allowed.
+  var symbolsAllowed = confirm("Use special characters in your new password?");
+  console.log("Use special characters: " + symbolsAllowed);
+
   var password = generatePassword();
   var passwordTextArea = document.querySelector("#password");
 
