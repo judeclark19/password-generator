@@ -64,15 +64,15 @@ function getParameters() {
 
 //Generate a new pw based on parameters given
 function generatePassword() {
-
+  return "password will appear here"
 }
 
 //Print generated pw in the box
-function writePassword() {
-  var password = getParameters(); //assigns the generated string to 'password'
+function printPassword() {
+  var password = generatePassword(); //assigns the generated string to 'password'
   var passwordTextArea = document.querySelector("#password"); //ID text area
   passwordTextArea.value = password; //puts the new pw in th text area
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword); // upon click, start the code
+generateBtn.addEventListener("click", printPassword); // upon click, start the code
