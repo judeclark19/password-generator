@@ -47,7 +47,7 @@ function generatePassword() {
   console.log("Use special characters: " + symbolsAllowed);
 
   //now, build the string of all available characters based on user answers
-  var allAvailableCharacters = ""; //empty character array to be filled
+  var allAvailableCharacters = ""; //empty character string to be filled
   if (lowercaseAllowed === true) {
     allAvailableCharacters = allAvailableCharacters.concat(lowerCaseString);
   }
@@ -61,6 +61,19 @@ function generatePassword() {
     allAvailableCharacters = allAvailableCharacters.concat(symbolsString);
   }
   console.log(allAvailableCharacters); //test pass
+
+    //now, pick a random character from the array we just built and put it in a new string for the number of times the user chose at the beginning
+
+    var newPassword=""; //empty string to hold the random pw
+
+    for (let i = 0; i < confirmedPwLength; i++) {
+      newPassword = newPassword.concat(
+        allAvailableCharacters[
+          Math.floor(Math.random() * allAvailableCharacters.length) //concat a character from the allAvailableCharacters string at random index position
+        ]
+      );
+    }
+    return newPassword; //end the function
 }
 
 // When button is clicked
