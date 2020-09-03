@@ -1,7 +1,7 @@
 # Password Generator
 
 ## Description
-This JavaScript application builds a password that is random and secure. The application asks the user's choices of password length and whether to use uppercase letters, lowercase letters, numbers and/or special characters.
+This JavaScript application builds a random and secure password based on the user's choices of password length and whether to use uppercase letters, lowercase letters, numbers and/or special characters.
 
 * Deployed application: [judeclark.github.io/password-generator](https://judeclark19.github.io/password-generator/)
 
