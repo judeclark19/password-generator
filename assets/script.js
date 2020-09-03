@@ -10,13 +10,17 @@ var symbolsString = "`~!@#$%^&*()-_=+[{]};:,<.>?";
 //Password Generator Function
 function generatePassword() {
   //ask the user for desired length
-  var desiredPwLength = Math.round(prompt("How many characters long would you like your password to be (between 8 and 128)?"));
+  var desiredPwLength = Math.round(
+    prompt(
+      "How many characters long would you like your password to be (between 8 and 128)?"
+    )
+  );
   //check that the input is within constrains
-  if (desiredPwLength>=8 && desiredPwLength <=128) {
+  if (desiredPwLength >= 8 && desiredPwLength <= 128) {
     var confirmedPwLength = desiredPwLength;
     console.log("Password length: " + confirmedPwLength);
   } else {
-    alert("Only enter a number between 8 and 128 please.")
+    alert("Only enter a number between 8 and 128 please.");
     throw new Error("User did not chose a length between 8 and 128 characters");
   }
 
@@ -26,11 +30,15 @@ function generatePassword() {
   );
   console.log("Use lowercase: " + lowercaseAllowed);
 
-    //next, ask if uppercase allowed.
-    const uppercaseAllowed = confirm(
-      "Use upper case letters in your new password?"
-    );
-    console.log("Use uppercase: " + uppercaseAllowed);
+  //next, ask if uppercase allowed.
+  const uppercaseAllowed = confirm(
+    "Use upper case letters in your new password?"
+  );
+  console.log("Use uppercase: " + uppercaseAllowed);
+
+  //next, ask if numbers allowed.
+  const numbersAllowed = confirm("Use numbers in your new password?");
+  console.log("Use numbers: " + numbersAllowed);
 }
 
 // When button is clicked
