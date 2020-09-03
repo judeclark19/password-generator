@@ -48,7 +48,19 @@ function generatePassword() {
 
   //now, build the string of all available characters based on user answers
   var allAvailableCharacters = ""; //empty character array to be filled
-
+  if (lowercaseAllowed === true) {
+    allAvailableCharacters = allAvailableCharacters.concat(lowerCaseString);
+  }
+  if (uppercaseAllowed === true) {
+    allAvailableCharacters = allAvailableCharacters.concat(upperCaseString);
+  }
+  if (numbersAllowed === true) {
+    allAvailableCharacters = allAvailableCharacters.concat(numbersString);
+  }
+  if (symbolsAllowed === true) {
+    allAvailableCharacters = allAvailableCharacters.concat(symbolsString);
+  }
+  console.log(allAvailableCharacters); //test pass
 }
 
 // When button is clicked
