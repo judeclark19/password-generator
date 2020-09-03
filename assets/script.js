@@ -16,7 +16,8 @@ function generatePassword() {
     var confirmedPwLength = desiredPwLength;
     console.log("Password length: " + confirmedPwLength);
   } else {
-
+    alert("Only enter a number between 8 and 128 please.")
+    throw new Error("User did not chose a length between 8 and 128 characters");
   }
 }
 
