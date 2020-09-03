@@ -11,7 +11,21 @@ All of the files necessary to run this website are available in [this repository
 
 
 ## Screenshots:
-![Image of Screenshot](./assets/screenshots/screenshot.png)
+#### Before the user clicks the button:
+![First screenshot](./assets/screenshots/screenshot1.png)
+#### First prompt after user clicks the button:
+![Second screenshot](./assets/screenshots/screenshot2.png)
+#### If user input does NOT meet password length requirements: 
+![Third screenshot](./assets/screenshots/screenshot3.png)
+#### If user input DOES meet the requirements, they receive the following 4 confirms:
+![First confirm](./assets/screenshots/confirm1.png)
+![Second confirm](./assets/screenshots/confirm2.png)
+![Third confirm](./assets/screenshots/confirm3.png)
+![Fourth confirm](./assets/screenshots/confirm4.png)
+
+#### An example given password length of 16, and "true" selected for the four prompts:
+![Fourth screenshot](./assets/screenshots/screenshot4.png)
+
 ## License
 MIT License
 

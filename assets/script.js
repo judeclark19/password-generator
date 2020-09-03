@@ -32,7 +32,7 @@ function generatePassword() {
 
   //next, ask if uppercase allowed.
   const uppercaseAllowed = confirm(
-    "Use upper case letters in your new password?"
+    "Use uppercase letters in your new password?"
   );
   console.log("Use uppercase: " + uppercaseAllowed);
 
