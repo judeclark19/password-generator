@@ -39,6 +39,12 @@ function generatePassword() {
   //next, ask if numbers allowed.
   const numbersAllowed = confirm("Use numbers in your new password?");
   console.log("Use numbers: " + numbersAllowed);
+
+  //next, ask if special characters allowed.
+  const symbolsAllowed = confirm(
+    "Use special characters in your new password?"
+  );
+  console.log("Use special characters: " + symbolsAllowed);
 }
 
 // When button is clicked
