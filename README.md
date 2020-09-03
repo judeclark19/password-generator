@@ -3,11 +3,11 @@
 ## Description
 This JavaScript application builds a new, random, and secure password based on the user's choices of password length and whether to use uppercase letters, lowercase letters, numbers and/or special characters.
 
-* [Password Generator index.html] TODO: update link (https://judeclark19.github.io/jude-clark-portfolio/)
+* Deployed application: [judeclark.github.io/password-generator](https://judeclark19.github.io/password-generator/)
 
 ## Usage
 
-All of the files necessary to run this website are available in [this repository] TODO: Update link(https://github.com/judeclark19/jude-clark-portfolio).
+All of the files necessary to run this website are available in [this repository](https://github.com/judeclark19/password-generator).
 
 
 ## Screenshots:
