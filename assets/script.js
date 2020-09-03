@@ -45,6 +45,10 @@ function generatePassword() {
     "Use special characters in your new password?"
   );
   console.log("Use special characters: " + symbolsAllowed);
+
+  //now, build the string of all available characters based on user answers
+  var allAvailableCharacters = ""; //empty character array to be filled
+
 }
 
 // When button is clicked
