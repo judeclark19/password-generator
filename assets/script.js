@@ -19,6 +19,18 @@ function generatePassword() {
     alert("Only enter a number between 8 and 128 please.")
     throw new Error("User did not chose a length between 8 and 128 characters");
   }
+
+  //next, ask if lowercase allowed.
+  const lowercaseAllowed = confirm(
+    "Use lowercase letters in your new password?"
+  );
+  console.log("Use lowercase: " + lowercaseAllowed);
+
+    //next, ask if uppercase allowed.
+    const uppercaseAllowed = confirm(
+      "Use upper case letters in your new password?"
+    );
+    console.log("Use uppercase: " + uppercaseAllowed);
 }
 
 // When button is clicked
